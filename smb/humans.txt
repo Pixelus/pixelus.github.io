@@ -1,0 +1,23 @@
+                            
+/* TEAM */
+
+Name: Stephanie Malafosse-Bernard
+Title: Web designer and front-end developer     
+Site: www.smalafosse.com                    
+E-mail: s.malafosse@gmail.com
+Contact: http://www.smalafosse.com/contact.html                                         
+Location: Allinges, France
+
+							
+/* THANKS */
+					
+Name: Swistblnk Design Std. for Ruffle Font
+Name: Glyphicons.com. for glyphicons                        
+
+                            
+/* SITE */
+                            
+Last update:  2018/12/31                         
+Standards: HTML5, CSS3                   
+Components: Apache, Bootstrap, jQuery, Google Fonts API, Google Analytics, Schema.org, WAI-ARIA                    
+Software: Sublime Text, Sketch, Couleurs, ImageOptim, FileZilla

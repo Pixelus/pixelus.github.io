@@ -1,0 +1,682 @@
+/********************* Reset CSS ********************/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+button,
+input,
+select,
+textarea {
+    /*font-family: inherit;*/ /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/********************************************************
+**************** D�but des styles CSS ******************
+********************************************************/
+
+/**************** El�ments g�n�raux ******************/
+body {
+	background: url("images/background.png") repeat;
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 960px;
+	margin: 0 auto;
+	color: #002d40;
+}
+
+#bloc-page {
+	width: 700px;
+	margin: auto;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	display: inline-block;
+	margin-left: 10px;
+	font-weight: normal;
+}
+/************************ Header ***************************/
+header {
+	margin-top: 10px;
+	border-bottom: 1px solid #000;
+}
+
+header img {
+	border: 5px solid #fff;
+	border-radius: 5px;
+	box-shadow: 1px 2px 2px #757574;
+	vertical-align: top;
+}
+
+#titre_principal {
+	display: inline-block;
+	margin: 0;
+}
+
+header h1 {
+	font-size: 84px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #fff;
+	margin: 0 0 30px;
+}
+
+header h2 {
+	color: #03638b;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #fff;
+	margin: -50px 0 40px 190px;
+	font-family: 'Source Sans Pro', sans-serif;/* Redite pour corriger le bug de police sur Opera */
+}
+
+/*********************** Navigation **********************/
+nav { 
+	display: inline-block;
+	width: 700px;
+	border-bottom: 1px solid #000;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 5px 0 10px 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 27px;
+	margin-left: -10px;
+}
+
+nav a {
+	color: #002d40;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+nav img {
+	position: relative;
+	top: 5px;
+	padding-right: 7px;
+}
+
+/******************** Comp�tences ***********************/
+
+#competences img.icone, #experiences img.icone, #formations img.icone, #centre_interet img.icone, #contact img.icone {
+	position: relative;
+	top: 7px;
+}
+
+#competences h1, #experiences h1, #formations h1, #centre_interet h1, #contact h1 {
+	text-shadow: 1px 1px 2px #fff;
+}
+
+#competences h1 {
+	margin-bottom: 0;
+}
+
+#competences {
+	margin-top: -5px;
+}
+
+#competences img.logo, #experiences img.logo {
+	display: block;
+}
+
+#competences ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 10px;
+}
+
+#competences li {
+	display: inline-block;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #fff;
+	font-size: 13.8px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+
+#competences span.niveau5 {
+	background: url("images/competences/niveau.png") no-repeat 0 0;
+	width: 83px;
+	height: 14px;
+	border: none;
+	display: block;
+	margin-left: 47px;
+	margin-top: -15px;
+}
+
+#competences span.niveau4 {
+	background: url("images/competences/niveau.png") no-repeat 0 25%;
+	width: 83px;
+	height: 14px;
+	border: none;
+	display: block;
+	margin-left: 47px;
+	margin-top: -15px;
+}
+
+#competences span.niveau3 {
+	background: url("images/competences/niveau.png") no-repeat 0 50%;
+	width: 83px;
+	height: 14px;
+	border: none;
+	display: block;
+	margin-left: 47px;
+	margin-top: -15px;
+}
+
+#competences span.niveau2 {
+	background: url("images/competences/niveau.png") no-repeat 0 75%;
+	width: 83px;
+	height: 14px;
+	border: none;
+	display: block;
+	margin-left: 47px;
+	margin-top: -15px;
+}
+
+#competences span.niveau1 {
+	background: url("images/competences/niveau.png") no-repeat 0 100%;
+	width: 83px;
+	height: 14px;
+	border: none;
+	display: block;
+	margin-left: 47px;
+	margin-top: -15px;
+}
+
+#competences img.logo {
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 5px;
+	vertical-align: top;
+}
+
+/********************** Exp�riences **********************/
+#experiences, #formations, #centre_interet, #contact {
+	margin-top: -20px;
+}
+
+#experiences img.logo {
+	display: inline-block;
+}
+
+#experiences h1 {
+	width: 600px;
+	margin-bottom: 15px;
+}
+
+#experiences h3 {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 16px;
+	text-shadow: 1px 1px 2px #fff;
+	vertical-align: top;
+	margin-top: 0;
+	margin-left: 20px;
+	font-family: 'Source Sans Pro', sans-serif;/* Redite pour corriger le bug de police sur Opera */
+}
+
+#experiences p {
+	margin-left: 130px;
+	font-size: 13px;
+	color: grey;
+	text-shadow: 1px 1px 2px #fff;
+	margin-top: 0;
+	position: relative;
+	top: -25px;
+	margin-bottom: -10px;;
+}
+
+/********************** Formations **********************/
+#formations h1 {
+	margin-bottom: 0;
+}
+
+#formations h3 {
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #fff;
+	font-family: 'Source Sans Pro', sans-serif;/* Redite pour corriger le bug de police sur Opera */
+}
+
+#formations p {
+	font-size: 13px;
+	color: grey;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+/********************* Centres d'inter�t *****************/
+#centre_interet h1 {
+	margin-bottom: 0;
+}
+
+#centre_interet ul {
+	list-style-type: none;
+	margin-left: -40px;
+}
+
+#centre_interet li {
+	display: inline-block;
+	width: 220px;
+	text-shadow: 1px 1px 2px #fff;
+	margin-right: 10px;
+}
+
+#centre_interet p {
+	color: grey;
+	font-size: 13px;
+	text-shadow: 1px 1px 2px #fff;
+	margin: -10px 0 10px 45px;
+}
+
+#centre_interet img.logo{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+/********************** Contact **********************/
+#contact h1 {
+	margin-bottom: 10px;
+}
+
+#contact form {
+	width: 300px;
+}
+
+#contact input, textarea {
+	margin-bottom: 5px;
+	border-radius: 2px;
+	width: 300px;
+	border: 1px solid black;
+	font-size: 12px;
+	background: url("images/background.png") repeat;
+	height: 25px;
+	box-shadow: inset 0px 2px 2px grey;
+}
+
+textarea {
+	height: 105px;
+	color: grey;
+}
+
+#contact input[type=submit] {
+	background: url("images/enveloppe.png") left no-repeat;
+	background-color: #002d40;
+	width: 88px;
+	height: 30px;
+	font-family: 'Pacifico', cursive;
+	color: #fff;
+	margin-top: 40px;
+	float: right;
+	text-align: right;
+	padding-right: 15px;
+	border: 1px solid grey;
+	box-shadow :1px 1px 1px #002d40 inset,
+				1px 1px 1px #002d40;
+}
+
+#acces {
+	width: 370px;
+	float: right;
+	position: relative;
+	bottom: 270px;
+}
+
+#contact #acces p {
+	color: grey;
+	font-size: 13px;
+}
+
+#acces iframe {
+	width: 370px;
+	height: 165px;
+	border: 1px solid grey;
+}
+
+/********************** Media Queries - Version Responsive *****************/
+@media screen and (max-width: 480px) {
+	body {
+		width: 380px;
+		margin: auto;
+	}
+	
+	#bloc-page {
+		width: 380px;
+		margin: auto;
+	}
+	
+	header {
+		height: 330px;
+	}
+	
+	header, nav {
+		border-bottom: none;
+	}
+	
+	header img {
+		vertical-align: middle;
+	}
+	
+	#titre_principal {
+		text-align: center;
+	}
+	
+	header h1 {
+		display: block;
+		font-size: 44px;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	
+	header h2 {
+		display: block;
+		font-size: 18px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	
+	nav ul {
+		margin-left: 50px;
+	}
+	
+	nav li {
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+	nav img {
+		display: none;
+	}
+	
+	#competences img.icone, #experiences img.icone, #formations img.icone, #centre_interet img.icone, #contact img.icone {
+		display: none;
+	}
+	
+	#competences h1, #experiences h1, #formations h1, #centre_interet h1, #contact h1 {
+		font-size: 22px;
+		margin-left: 60px;
+		margin-top: 0;
+	}
+	
+	#competences {
+		margin-left: 10px;
+	}
+	
+	#experiences h1, #formations h1, #centre_interet h1, #contact h1 {
+		margin-top: 20px;
+	}
+	
+	#experiences img.logo {
+		display: none;
+	}
+	
+	#experiences h3, #formations h3 {
+		width: 360px;
+	}
+	
+	#experiences h3, #formations h3, #centre_interet img.logo {
+		margin-left: 10px;
+	}
+	
+	#experiences p, #formations p {
+		width: 340px;
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+	
+	#formations h3 {
+		margin-bottom: 0;
+	}
+	
+	#formations p {
+		margin-top: 10px;
+	}
+	
+	#centre_interet img.logo {
+		margin-right: 20px;
+	}
+	
+	#centre_interet p {
+		margin-left: 60px;
+		width: 170px;
+	}
+	
+	#contact form {
+		margin-left: 10px;
+	}
+	
+	#contact input[type=submit] {
+		position: relative;
+		left: 50px;
+	}
+	
+	#acces {
+		position: relative;
+		top: 0;
+	}
+	
+	#acces iframe {
+		width: 345px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

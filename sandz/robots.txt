@@ -1,0 +1,27 @@
+User-agent: *
+
+# On signale le fichier Sitemap
+Sitemap: http://www.sandrineangelibert.fr/sitemap.xml
+Sitemap-images: http://www.sandrineangelibert.fr/sitemap-image.xml
+
+# On désindexe tous les URL ayant des paramêtres (duplication de contenu)
+Disallow: 
+
+# On autorise Google à indexer les fichiers mis en ligne dans vos articles et pages (images, vidéos, audio,...)
+Allow: 
+User-agent: *
+
+# On bloque les URL de ping et de trackback
+Disallow: /*trackback
+
+#On élimine les stats de Piwik de l'indexation 
+Disallow: /*piwik
+
+# On élimine ce répertoire sensible présent sur certains serveurs
+Disallow: /cgi-bin
+
+# On désindexe tous les fichiers qui n'ont pas lieu de l'être
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.gz$
+Disallow: /*.cgi$

@@ -1,10 +1,170 @@
-html {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield|Open+Sans');
+
+a {
+  color: #00ACC1;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+#portfolio {
+  padding: 5rem;
 }
-body {
-  padding: 0;
-  margin: 0;
+section.hero.is-primary.is-bold, footer.footer {
+  color: #FFF;
+  background-color: #000;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+}
+.container {
+  margin-left: 4rem;
+}
+.hero-body .title {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: normal;
+  font-size: 4.4em;
+}
+.hero.is-primary .subtitle {
+  padding-top: 0.5rem;
+  font-size: 1.25rem;
+}
+section#portfolio {
+  background-image: rgb(204, 201, 201);
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+}
+.title {
+  font-size: 1.4rem;
+}
+.subtitle {
+  font-size: 1rem;
+  font-style: italic;
+}
+.content {
+    font-size: 0.855rem;
+}
+.figures {
+  display: flex;
+  margin-bottom: 0.5rem;
+  margin-top: -0.5rem;
+  justify-content: space-around;
+}
+.affiche {
+  margin-bottom: 0.5rem;
+  margin-top: -0.5rem;
+}
+.figures > a:nth-child(1) {
+  max-width: 21.5%;
+}
+.figures > a:nth-child(2) {
+  max-width: 32.5%;
+}
+.figures > a:nth-child(3) {
+  max-width: 25%;
+}
+.lien {
+    margin: 1rem 0;
+}
+figure {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+.content figure:not(:first-child).article {
+  margin: 1rem 0;
+}
+.clear {
+  margin-top: 1rem;
+}
+.tile {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.tags.has-addons {
+  margin-bottom: 0rem;
+  margin-right: 0.5rem;
+}
+span.tag {
+  font-size: 0.7rem;
+}
+.tag:not(body).is-primary {
+  background-color: #0097A7;
+}
+a.button.is-small.is-primary {
+    background-color: #0097A7;
+    display: block;
+    justify-content: flex-end;
+    right: 0;
+}
+span.tag.is-primary {
+  margin-right: 0.45rem;
+}
+ul {
+  list-style: circle;
+}
+li {
+  margin-bottom: 0;
+}
+img {
+  border-radius: 5px;
+}
+footer.footer {
+  padding: 2rem 0 1rem 0;
+}
+footer strong{
+  color: #FFF;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact img {
+  margin: 0.8rem;
+}
+div.humans a img {
+  max-width: 88px;
+}
+@media screen and (max-width: 1024px) {
+  .hero.is-primary .title {
+    font-size: 3.5rem;
+  }
+  #portfolio {
+    padding: 4.5rem;
+  }
+  #portfolio p.title, #portfolio h3 {
+    font-size: 1rem;
+  }
+  .hero.is-primary .subtitle {
+    font-size: 1rem;
+  }
+  #portfolio p.subtitle {
+    font-size: 0.8rem;
+  }
+  #portfolio .content {
+      font-size: 0.8rem;
+  }
+  #portfolio .tile {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero.is-primary .title {
+    font-size: 3.25rem;
+  }
+  .hero.hero.is-primary .title, .hero.is-primary .subtitle {
+    text-align: center;
+  }
+  .container {
+    margin-left: auto;
+  }
+  #portfolio .content {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 405px) {
+  #mac-color figure.image {
+    margin: 0.5rem;
+  }  
+}
+@media screen and (max-width: 405px) {
+  .hero.is-primary .title {
+    font-size: 3rem;
+  }
+  #portfolio {
+    padding: 3rem;
+  }
 }

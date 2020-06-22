@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr-FR" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Articles de Stéphanie Malafosse, web designer et intégratrice web, sur le design et le développement web, tutoriels et astuces">
+    <meta name="author" content="Stéphanie Malafosse">
+
+    <title>St&eacute;phanie Malafosse | Articles</title>
+    <!-- humans.txt -->
+    <link type="text/plain" rel="author" href="http://www.smalafosse.com/humans.txt" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%20%7c%20http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<script async src='js/font.js'></script>
+    
+</head>
+
+<body class="index" itemscope itemtype="http://schema.org/WebPage">
+
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="text-uppercase menu">Menu</span>
+                        <span id="hamburger">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span><!-- #hamburger -->
+                    </button>
+                    <h1>
+                        <a class="navbar-brand" href="http://www.smalafosse.com/index.html"><span itemprop="name" translate="no">S. Malafosse</span></a>
+                    </h1>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" role="menubar">
+                        <li><a href="index.html" role="menuitem">Accueil</a></li>
+                        <li><a href="portfolio.html" role="menuitem">Portfolio</a></li>
+                        <li><a href="services.html" role="menuitem">Services</a></li>
+                        <li><a href="about.html" role="menuitem">&Agrave; propos</a></li>
+                        <li><a class="active" href="blog.html" role="menuitem">Articles</a></li>
+                        <li><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul>
+                </div><!-- .navbar-collapse -->
+            </div><!-- .container -->
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <section id="articles" class="content row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Articles</h2>
+            </div><!-- .co-lg-12 -->
+            <article>
+            	<!-- Blog Post -->
+	            <!-- Titre -->
+	            <h3 class="col-xs-12 col-sm-7">Gestion de version avec Git et Bitbucket</h3>
+	            <!-- Date/Heure -->
+	            <p class="tag text-right"><span class="glyphicon glyphicon-time"></span> Post&eacute; le <time datetime="2018-12-17T18:26">17 d&eacute;cembre 2018 &agrave; 18:26</time></p>
+	            <p class="tag col-sm-12"><i><strong>Environnement de test</strong> : MacBook Pro avec OS X Yosemite (version 10.10.3), application Terminal (version 2.5.3), Git (version 2.3.5) et Bitbucket (<a href="https://bitbucket.org/">https://bitbucket.org/</a>)</i></p><br>
+	            <!-- Post Content -->   
+	            <div id="git-bitbucket" class="post-content clear">
+	            	<p>Le gestionnaire de version est l'outil indispensable du d&eacute;veloppeur qui peut enregistrer et conserver les diff&eacute;rentes versions de ses fichiers, images, codes sources... <br>Ce syst&egrave;me de contr&ocirc;le des versions (SCV ou SCV en anglais) permet notamment au d&eacute;veloppeur de :</p><br>
+	            	<ul>
+	            		<li class="chevron-right">g&eacute;rer un projet seul ou avec d'autres d&eacute;veloppeurs</li>
+	            		<li class="chevron-right">garder une trace des changements effectu&eacute;s dans le projet en cours</li>
+	            		<li class="chevron-right">revenir &agrave; une version ant&eacute;rieure d'un document</li>
+	            		<li class="chevron-right">faciliter la collaboration avec les autres personnes intervenant dans le projet</li>
+	            		<li class="chevron-right">partager les fichiers avec les autres d&eacute;veloppeurs du projet</li>
+	            	</ul>
+                    <!-- Un bouton avec un onclick qui appelle une fonction avec en param7TRE le bouton et l'id du div à afficher/masquer. -->
+                    <button type="button" class="btn btn-default" onclick="toggle_div(this,'affichage-article-git');">Lire l'article</button>
+                    <!-- Un div caché avec un attribut id -->
+                    <div class="clear" id="affichage-article-git" style="display:none;">
+                        <p>Pour contr&ocirc;ler les versions de ses fichiers, le d&eacute;veloppeur utilise un logiciel de gestion de version et un h&eacute;bergeur de d&eacute;p&ocirc;t.</p>
+                        <p>Dans ce tutoriel, nous utiliserons un logiciel libre de version d&eacute;centralis&eacute; appel&eacute; <a href="https://git-scm.com/">Git</a>.<br>
+                        Un <strong>logiciel de version d&eacute;centralis&eacute;</strong> permet &agrave; chaque d&eacute;veloppeur de travailler de son c&ocirc;t&eacute;, &agrave; son rythme et de fa&ccedil;on asynchrone des autres d&eacute;veloppeurs. Il existe ainsi plusieurs d&eacute;p&ocirc;ts venant de chaque intervenant.<br>
+                        &Agrave; l'inverse, dans une <strong>gestion de version centralis&eacute;e</strong>, il n'existe qu'un seul d&eacute;p&ocirc;t des versions sur lequel tout le monde travaille, ce qui peut &ecirc;tre un risque dans le sens o&ugrave; l'exp&eacute;rimentation sur un fichier peut casser tout le projet.</p>
+                        <p>Un service web d'h&eacute;bergement de d&eacute;p&ocirc;t est aussi n&eacute;cessaire afin que les d&eacute;veloppeurs disposent d'un canal d'&eacute;change pour leurs travaux respectifs.<br><a href="https://bitbucket.org/">Bitbucket</a> est un h&eacute;bergeur gratuit pour les d&eacute;p&ocirc;ts Git et <a href="https://www.mercurial-scm.org/">Mercurial</a> (un autre logiciel de version d&eacute;centralis&eacute;).<br>
+                        Il existe un autre service web d'h&eacute;bergement plus connu, <a href="https://github.com/">GitHub</a>, qui permet lui aussi de stocker en ligne les d&eacute;p&ocirc;ts publics ou priv&eacute;s.</p><br>
+                        <p><strong>Comparatif entre Bitbucket et GitHub</strong></p>
+                        <table role="grid">
+                            <thead>
+                                <tr role="row">
+                                    <th></th>
+                                    <th>Bitbucket</th>
+                                    <th>Git</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr role="row">
+                                    <td role="rowheader">D&eacute;p&ocirc;t public</td>
+                                    <td role="rowheader">gratuit</td>
+                                    <td role="rowheader">gratuit</td>
+                                </tr>
+                                <tr role="row">
+                                    <td role="gridcell">D&eacute;p&ocirc;t priv&eacute;</td>
+                                    <td role="gridcell">gratuit</td>
+                                    <td role="gridcell">payant</td>
+                                </tr>
+                                <tr role="row">
+                                    <td role="gridcell">Nombre de d&eacute;veloppeurs</td>
+                                    <td role="gridcell">5 maximum</td>
+                                    <td role="gridcell">illimit&eacute;</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr role="row">
+                                    <td role="gridcell">Conclusion</td>
+                                    <td role="gridcell">Plus &eacute;conomique pour les projets n&eacute;cessitant une petite &eacute;quipe ou pour les projets priv&eacute;.</td>
+                                    <td role="gridcell">Mieux adapt&eacute; pour les grands projets ou les projets open source.</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <p><strong>GitHub</strong> &rarr; payant pour l'h&eacute;bergement des d&eacute;p&ocirc;ts priv&eacute;s, plus focalis&eacute; sur les d&eacute;p&ocirc;ts publics et l'open source<br>
+                        <strong>Bitbucket</strong> &rarr; gratuit pour l'h&eacute;bergement des d&eacute;p&ocirc;ts priv&eacute;s de fa&ccedil;on illimit&eacute;e, permet d'h&eacute;berger ses fichiers priv&eacute;s</p>
+                        <p>A vous de d&eacute;terminer quel est l'aspect le plus important pour vous : &ecirc;tre visible et privil&eacute;gier l'open source ou travailler en &eacute;quipe sur de petits projets ou des d&eacute;p&ocirc;ts priv&eacute;s.</p><br>
+                        <p><strong>Fonctionnement de Git</strong></p>
+                        <p>Git se comporte comme un arbre avec des branches.<br>
+                        La base du tronc est le dossier parent auquel sont rattach&eacute;s les dossiers enfants.<br>
+                        Les diff&eacute;rentes branches de l'arbre sont les bifurcations. Travailler sur une branche permet de faire une bifurcation sur la branche principale, cela sert pour int&eacute;grer une nouvelle fonctionnalit&eacute; ou un nouveau module dans son projet par exemple.<br>
+                        On construit cet arbre en cr&eacute;ant des commits. Un <a href="https://git-scm.com/docs/git-commit">commit</a> est un instantan&eacute; d'un fichier, c'est comme un maillon de notre cha&icirc;ne, une sorte de checkpoint.<br>
+                        La construction d'un commit est d&eacute;finitif car son contenu ne pourra jamais &ecirc;tre modifi&eacute;, on travaillera toujours avec une copie de ce contenu.</p>
+                        <p>Git utilise 3 zones de travail :</p><br>
+                        <ul>
+                            <li class="chevron-right">le <a href="https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Rudiments-de-Git#Les-trois-états">Working Directory</a> qui est le dossier de travail contenant les fichiers dans leur version actuelle</li>
+                            <li class="chevron-right">l'<a href="https://git-scm.com/book/fr/v2/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">index</a> qui permet de stocker les modifications, l'index s'appelle aussi<a href="https://git-scm.com/book/fr/v2/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t"> Cache</a> ou <a href="https://git-scm.com/book/fr/v2/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">Staging Area</a></li>
+                            <li class="chevron-right">l'<a href="https://git-scm.com/book/fr/v1/Les-tripes-de-Git-R%C3%A9f%C3%A9rences-Git#La-branche-HEAD">HEAD</a> qui pointe vers le dernier commit</li>
+                        </ul><br>
+                        <p><strong>Cr&eacute;ation d'un projet avec Git et Bitbucket</strong></p>
+                        <p>Git s'utilise en ligne de commande mais il existe des interfaces graphiques comme par exemple <a href="https://www.sourcetreeapp.com/">SourceTree</a> de Atlassian, qui permet de se connecter &agrave; un serveur distant pour cloner des d&eacute;p&ocirc;ts existants.</p>
+                        <p>Pour cr&eacute;er votre premier projet avec Git et Bitbucket, vous devez au pr&eacute;alable :</p><br>
+                        <ul>
+                            <li class="chevron-right">cr&eacute;er un compte chez <a href="https://fr.atlassian.com/software/bitbucket">Atlassian</a></li>
+                            <li class="chevron-right">t&eacute;l&eacute;charger et installer la derni&egrave;re version de <a href="https://git-scm.com/">Git</a></li>
+                            <li class="chevron-right">ex&eacute;cutez les commandes suivantes dans votre terminal pour param&eacute;trer vos identifiants d'utilisation de Git</li>
+                        </ul>
+                        <pre class="code"><code>git config --global user.name "Votre pseudo"<br>git config --global user.email "Votre email"</code></pre>
+                        <p>Relancez votre terminal et v&eacute;rifier que git fonctionne en tapant</p><br>
+                        <pre><code>git</code></pre>
+                        <p>Un guide d'utilisation de Git devrait s'afficher en anglais dans votre console.</p><br>
+                        <ul>
+                            <li class="chevron-right">connectez-vous sur le site de bitbucket et cr&eacute;er un d&eacute;p&ocirc;t en allant sur <em>Cr&eacute;er > Cr&eacute;er un d&eacute;p&ocirc;t</em></li>
+                            <li class="chevron-right">remplissez le formulaire pour cr&eacute;er votre nouveau d&eacute;p&ocirc;t (donnons lui le nom de Projet) en n'oubliant pas de cocher les cases <em>Gestion de bug</em> et <em>Wiki</em>, puis cliquez sur<em> Cr&eacute;er un d&eacute;p&ocirc;t</em></li>
+                            <li class="chevron-right">cliquez sur <em>Cloner le d&eacute;p&ocirc;t</em> en haut à gauche et copier l'adresse HTTPS</li>
+                            <li class="chevron-right">ouvrez votre terminal et placez vous dans le dossier de stockage de vos d&eacute;p&ocirc;ts en utilisant la ligne de commande</li>
+                        </ul>
+                        <p>Si vous ne savez pas utiliser le langage Shell en ligne de commande, je vous recommande le tr&eacute;s bon tutoriel <a href="https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux/entrer-une-commande">Reprenez le contr&ocirc;le &agrave; l'aide de Linux</a> sur le site d'OpenClassrooms.</p><br>
+                        <ul>
+                            <li class="chevron-right">lorsque vous &ecirc;tes positionn&eacute; dans votre dossier de d&eacute;p&ocirc;t dans votre terminal, collez l'adresse HTTPS que vous avez copi&eacute; pr&eacute;c&eacute;demment</li>
+                            <li class="chevron-right">tapez ensuite les commandes suivantes :</li>
+                            <li>
+                                <ul>
+                                    <li class="list-code font-size-reduite"><pre><code>git status</code></pre> &rarr; d&eacute;termine l'&eacute;tat des fichiers dans le d&eacute;p&ocirc;t et indique s'ils sont suivis</li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>git add projet</code></pre> &rarr; ajoute le dossier <em>projet</em> &agrave; l'index, on place le dossier sous version, cela indique &agrave; Git de suivre le dossier <em>projet</em></li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>cd projet</code></pre> &rarr; ce param&egrave;tre vous place dans le dossier <em>projet</em></li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>git init nouveau dossier</code></pre> &rarr; cr&eacute;e un nouveau d&eacute;p&ocirc;t ou <a href="https://fr.wikipedia.org/wiki/D%C3%A9p%C3%B4t_(informatique)">repository</a> vide s'appelant <em>nouveau_dossier</em></li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>ls</code></pre> &rarr; liste les fichiers et dossiers du r&eacute;pertoire courant, vous pouvez constater qu'un nouveau dossier appel&eacute; <em>nouveau_dossier</em> existe maintenant dans votre dossier<em>projet</em></li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>git status</code></pre> &rarr; le terminal nous indique qu'il y a un nouveau dossier, le dossier<em>nouveau_dossier</em>, et que ce fichier n'est pas suivi par la gestion de version</li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>git add nouveau_dossier</code></pre> &rarr; ajoute le dossier <em>nouveau_dossier</em> &agrave; l'index, Git nous indique qu'il y a un nouveau dossier suivi</li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>git commit -m "Premier commit"</code></pre> &rarr; cr&eacute;e un commit avec le message "Premier commit" et valide les modifications enregistr&eacute;es</li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>git log</code></pre> &rarr; inspecte l'historique des commits, vous pouvez voir que votre commit appara&icirc;t avec la date, l'heure, le nom du commit et votre message</li>
+                                    <li class="list-code font-size-reduite"><br><pre><code>git push</code></pre> &rarr; envoie les commits sur le serveur sinon vos commits restent en local</li>
+                                </ul>
+                            </li>
+                            <li class="chevron-right">retournez sur votre compte Bitbucket et actualisez la page de votre premier d&eacute;p&ocirc;t, celle o&ugrave; vous avez copi&eacute; l'adresse HTTPS du d&eacute;p&ocirc;t. Vous pouvez constater que votre d&eacute;p&ocirc;t a bien &eacute;t&eacute; envoy&eacute; sur votre serveur, et vous pouvez voir les dossiers cr&eacute;&eacute;s dans l'onglet <em>Source</em> situ&eacute; sous l'onglet <em>Vue d'ensemble</em> dans le menu de gauche.</li>
+                        </ul>
+                        <p>Vous venez de cr&eacute;er votre premier d&eacute;p&ocirc;t. A vous maintenant d'explorer les possibilit&eacute;s offertes avec la gestion de version.<br>
+                        Voici quelques autres commandes utiles qui pourront vous servir :</p>
+                        <ul>
+                            <li class="list-code"><br><pre><code>git commit -a</code></pre> &rarr; place tout fichier d&eacute;j&agrave; en suivi de version dans la zone d'index afin d'&eacute;viter de faire un <em>add</em></li>
+                            <li class="list-code"><br><pre><code>git rm -f mon_fichier</code></pre> &rarr; supprime et d&eacute;sindexe le fichier <em>mon_fichier</em></li>
+                            <li class="list-code"><br><pre><code>git rm --cached mon_fichier</code></pre> &rarr; arr&ecirc;te le suivi du fichier<em>mon_fichier</em> mais le conserve dans la copie de travail</li>
+                            <li class="list-code"><br><pre><code>git mv mon_fichier monnouveaufichier</code></pre> &rarr; renomme le fichier <em>mon_fichier</em> en <em>mon_nouveau_fichier</em></li>
+                            <li class="list-code"><br><pre><code>git show</code></pre> &rarr; affiche les d&eacute;tails d'un objet Git</li>
+                            <li class="list-code"><br><pre><code>git diff</code></pre> &rarr; affiche les modifications index&eacute;es et non index&eacute;es entre deux fichiers</li>
+                            <li class="list-code"><br><pre><code>git branch ma_branche</code></pre> &rarr; cr&eacute;e une nouvelle branche avec le nom <em>ma_branche</em></li>
+                            <li class="list-code"><br><pre><code>git checkout</code></pre> &rarr; se positionne sur la branche voulue</li>
+                            <li class="list-code"><br><pre><code>git checkout -b ma_branche</code></pre> &rarr; cr&eacute;e la branche <em>ma_branche</em> et se positionne imm&eacute;diatement dessus</li>
+                            <li class="list-code"><br><pre><code>git merge ma_branche</code></pre> &rarr; fusionne la branche <em>ma_branche</em> avec la branche sur laquelle on se trouve</li>
+                            <li class="list-code"><br><pre><code>git pull</code></pre> &rarr; r&eacute;cup&egrave;re et t&eacute;l&eacute;charge les nouveaux commits pr&eacute;sents sur le serveur</li>
+                        </ul>
+                        <p><strong>Ressources</strong></p>
+                        <p>Voici quelques liens qui pourront vous initier plus en d&eacute;tails &agrave; Git :</p><br>
+                        <ul>
+                             <li class="chevron-right">Aide&ndash;m&eacute;moire interactif sur Git (en fran&ccedil;ais) : <a href="http://ndpsoftware.com/git-cheatsheet.html">http://ndpsoftware.com/git-cheatsheet.html</a></li>
+                             <li class="chevron-right">Application en ligne Learn Git Branching (en fran&ccedil;ais !) : <a href="http://pcottle.github.io/learnGitBranching/">http://pcottle.github.io/learnGitBranching/</a></li>
+                             <li class="chevron-right">Vid&eacute;os d'apprentissage sur le site de Git (en anglais) : <a href="http://git-scm.com/videos">http://git-scm.com/videos</a></li>
+                             <li class="chevron-right">Cours d'Udacity sur Git et GitHub (en anglais) : <a href="https://www.udacity.com/course/how-to-use-git-ang-github--ud775">How to use Git and GitHub &ndash; Version Control for Code</a></li>
+                             <li class="chevron-right">Conf&eacute;rence d'Anna Whitney dans le cadre du cours Computer Science CS50 de Harvard (en anglais) : <a href="https://manual.cs50.net/seminars/#how_and_why_you_should_use_git">How (and Why) You Should Use Git</a></li>
+                             <li class="chevron-right">Conf&eacute;rence de Tommy MacWilliam dans le cadre du cours Computer Science CS50 de Harvard (en anglais) : <a href="https://manual.cs50.net/seminars/#git_magic_versioning_files_like_a_boss">Git Magic: Versioning Files Like a Boss</a></li>
+                        </ul>
+                    </div><!-- #affichage-article-git -->
+	            </div><!-- .post-content #git-bitbucket-->
+            </article><hr>
+            <article>
+	 			<!-- Blog Post -->
+	            <!-- Titre -->
+	            <h3 class="col-xs-12 col-sm-7">Activer la coloration syntaxique dans le terminal de Mac OS X</h3>
+	            <!-- Date/Heure -->
+	            <p class="tag text-right"><span class="glyphicon glyphicon-time"></span> Post&eacute; le <time datetime="2018-11-30T16:31"></time>30 novembre 2018 &agrave; 16:31</p>
+	            <p class="tag col-sm-12"><i><strong>Environnement de test</strong> : MacBook Pro avec OS X Yosemite (version 10.10.3) et application Terminal (version 2.5.3)</i></p><br>
+	            <!-- Post Content -->
+	            <div id="terminal-color" class="post-content clear">
+		            <p>Sur un Mac, il est parfois utile de pouvoir faire la diff&eacute;rence entre les dossiers, les fichiers et les
+		            instructions tap&eacute;es dans le terminal. L'activation de la coloration syntaxique permet de mieux distinguer chaque
+		            &eacute;l&eacute;ment, et par la m&ecirc;me occasion elle apporte un r&eacute;el confort de lecture.</p>
+		            <p>Sans cette activation de couleur, le terminal ressemble &agrave; l'image ci-dessous :</p><br>
+		            <img class="img-responsive center-block" src="img/terminal-default.jpg" alt="Terminal de Mac OS X">
+                    <!-- Un bouton avec un onclick qui appelle une fonction avec en paramètre le bouton et l'id du div à afficher/masquer. -->
+                    <button type="button" class="btn btn-default" onclick="toggle_div(this,'affichage-article-couleur-terminal');">Lire l'article</button>
+                    <!-- Un div caché avec un attribut id -->
+                    <div class="clear" id="affichage-article-couleur-terminal" style="display:none;">
+    		            <p>Pour activer la couleur dans notre terminal, il va nous falloir modifier le fichier <span class="color">.bash_profile</span>
+    		            dans lequel sont plac&eacute;es les variables d'environnement.<br>
+    		            Les variables d'environnement permettent d'influencer le comportement des applications du syst&agrave;me, comme par exemple ici l'application <em>Terminal.</em><br>
+    		            Ce fichier <span class="color">.bash_profile</span> est ce que l'on appelle un fichier cach&eacute;, reconnaissable au point plac&eacute; devant le nom du fichier. Il est ex&eacute;cut&eacute; au lancement de la session de l'utilisateur.</p><br>
+    		            <p><strong>Activation de la couleur dans le terminal</strong></p><br>  
+    		            <ul>
+                            <li class="chevron-right">ouvrez votre terminal &ndash; vous devriez avoir un affichage basique avec le nom de votre Mac suivi de l'identifiant de connexion de votre session<br><br>
+                            <img class="img-responsive center-block" src="img/terminal.jpg" alt="Terminal de Mac OS X"></li>
+                            <li class="chevron-right">v&eacute;rifiez que le fichier <span class="color">.bash_profile</span> existe en tapant dans la console l'instruction suivante (vous pouvez collier-coller l'instruction) :</li>
+                            <li class="list-code"><br><pre><code>ls -la | grep ".bash_profile"</code></pre>
+                            	Cette ligne de commande liste les fichiers du r&eacute;pertoire courant, en incluant les ficiers cach&eacute;s, et ne conserve que les lignes contenant la cl&eacute; <em>.bash_profile</em>.
+                            	Si le terminal affiche un message indiquant que le fichier n'existe pas, vous pouvez le cr&eacute;er avec l'instruction suivante :</li>
+                            <li class="list-code"><br><pre><code>touch .bash_profile</code></pre></li>
+                            <li class="chevron-right">&eacute;ditez votre fichier <span class="color">.bash_profile</span> afin de modifier les variables d'environnement &ndash; l'instruction suivante permet d'ouvrir votre fichier dans l'application<em>TextEdit</em>, l'&eacute;diteur de texte par d&eacute;faut sur Mac :</li>
+                            <li class="list-code"><br><pre><code>open -a "TextEdit" .bash_profile</code></pre>
+                            TextEdit ouvre une page vide que l'on va pouvoir remplir.<br><br></li>
+                            <li class="chevron-right">si vous utilisez un terminal avec un arri&egrave;re-plan clair, ajoutez les param&agrave;tres suivants au fichier <span class="color">.bash_profile</span> :</li>
+                            <li class="list-code"><br><pre><code>export CLICOLOR=1<br>export LSCOLORS=ExFxCxDxBxegedabagacad</code></pre></li>
+                            <li class="chevron-right">si vous utilisez un terminal avec un arri&egrave;re-plan noir ou fonc&eacute;, pr&eacute;f&eacute;rez les param&egrave;tres suivants :
+                            <li class="list-code"><br><pre><code>export CLICOLOR=1<br>export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx</code></pre></li> 
+                        </ul>
+                        <p>Voici le r&eacute;sultat avec la couleur activ&eacute;e dans un terminal de couleur claire.</p><br>
+                        <img class="img-responsive center-block" src="img/terminal-light.jpg" alt="Terminal de Mac OS X">
+                        <p>Et voici le r&eacute;sultat dans un terminal avec un fond d'&eacute;cran fonc&eacute;.</p><br>
+                        <img class="img-responsive center-block" src="img/terminal-black.jpg" alt="Terminal de Mac OS X"><br>
+                        <p><strong>D&eacute;tails des commandes UNIX utilis&eacute;es</strong></p><br>
+                        <ul>
+                            <li class="chevron-right"><i>Commande de gestion de r&eacute;pertoire</i></li>
+                            <li><ul>
+    	                        <li class="list-code"><pre><code>ls</code></pre> &rarr; liste le contenu d'un r&eacute;pertoire</li>
+    	                        <li class="list-code"><br><pre><code>-l</code></pre> &rarr; liste les informations d&eacute;taill&eacute;es des fichiers (type de fichier, nombre de liens avec le fichier, propri&eacute;taire du fichier...)</li>
+    	                        <li class="list-code"><br><pre><code>-a</code></pre> &rarr; liste les fichiers cach&eacute;s</li>
+    	                        <li class="list-code"><br><pre><code>ls -la</code></pre> &rarr; raccourci de <span class="color"><em>ls -l -a</em></span>, affichage d&eacute;taill&eacute; incluant les fichiers cach&eacute;s</li>
+    	                    </ul></li>
+    	                    <li class="chevron-right"><i>Op&eacute;rateur de redirection d'entr&eacute;e/sortie</i></li>
+    	                    <li><ul>
+    	                        <li class="list-code"><pre><code>|</code></pre> &rarr; appel&eacute; symbole <span class="color"><em>pipe</em></span>, relie deux commandes entre elles</li>
+    	                    </ul></li>
+                            <li class="chevron-right"><i>Commande de recherche</i></li>
+                            <li><ul>
+                            	<li class="list-code"><pre><code>grep</code></pre> &rarr; affiche les lignes du fichier contenant la cha&icirc;ne de caract&egrave;re</li>
+                           	</ul></li>
+                            <li class="chevron-right"><i>Commande d'&eacute;dition</i></li>
+                            <li><ul>
+                            	<li class="list-code"><pre><code>touch</code></pre> &rarr; modifie les caract&eacute;ristiques d'un fichier ou cr&eacute;e un fichier vide s'il n'existe pas d&eacute;j&agrave;</li>
+                            </ul></li>
+                            <li class="chevron-right"><i>Commande de client FTP</i></li>
+                            <li><ul>
+                            	<li class="list-code"><pre><code>open</code></pre> &rarr; ouvre une session FTP ou une application</li>
+                            </ul></li>
+                            <li class="chevron-right"><i>Commande d'exportation de variable</i></li>
+                            <li><ul>
+                            	<li class="list-code"><pre><code>export</code></pre> &rarr; exporte (copie) une variable de mani&egrave;re &agrave; ce qu'elle soit visible par les scripts</li>
+                            </ul></li>
+                            <li class="chevron-right"><i>Autres commandes</i></li>
+                            <li><ul>
+                            	<li class="list-code"><pre><code>CLICOLOR=1</code></pre> &rarr; active simplement la couleur dans votre terminal (principe de l'interrupteur)</li>
+                            	<li class="list-code"><br><pre><code>LSCOLORS</code></pre> &rarr; sp&eacute;cifie et personnalise les couleurs que vous utilisez</li>
+                            </ul></li>
+                        </ul>
+                        <p><strong>Ressources</strong></p>
+                        <p>Voici quelques liens qui pourront vous &ecirc;tre utiles :</p><br>
+                        <ul>
+                             <li class="chevron-right">G&eacute;n&eacute;rateur de couleur : <a href="http://geoff.greer.fm/lscolors/">LSCOLORS Generator de Geoff Greer</a></li>
+                             <li class="chevron-right">Indexation des couleurs pour la commande LSCOLORS (en anglais) : <a href="https://gist.github.com/thomd/7667642">LSCOLORS &amp; LS_COLORS</a></li>
+                             <li class="chevron-right">Tout ce que vous avez toujours voulu savoir sur Unix sans jamais oser le demander &ndash; O&ugrave; comment utiliser la ligne de commande quand on n'y conna&icirc;t goutte : <a href="http://lozzone.free.fr/unix/guide-unix.pdf">http://lozzone.free.fr/unix/guide-unix.pdf</a></li>
+                             <li class="chevron-right">Cours d'Udacity sur le Shell et la ligne de commande (en anglais) : <a href="https://www.udacity.com/course/linux-command-line-basics--ud595">Linux Command Line Basics &ndash; Getting Started with the Shell</a></li>
+                             <li class="chevron-right">Conf&eacute;rence de Douglas Kline dans le cadre du cours Computer Science CS50 de Harvard (en anglais) : <a href="https://manual.cs50.net/seminars/#unix_shells_environments">Unix Shells, environments</a></li>
+                        </ul>
+                    </div><!-- #affichage-article-couleur-terminal -->
+	            </div><!-- .post-content #terminal-color -->     
+            </article>
+        </section><!-- #articles .row -->
+    </main>
+	<footer class="container-fluid">
+        <section id="footer" class="text-center">
+            <div>
+                <ul class="list-inline social-buttons">
+                    <li>
+                    	<a class="google" href="https://plus.google.com/+St%C3%A9phanieMalafosse74/posts" target="_blank" rel="external" data-toggle="hidden">
+                        	<img src="img/google-plus-5-48-white.png" onmouseover="this.src='img/google-plus-5-48-cyan.png'" onmouseout="this.src='img/google-plus-5-48-white.png'" onmousedown="this.src='img/google-plus-5-48-limegreen.png'" class="social google" data-toggle="hidden" alt="Icone Google Plus" />
+                        	<i class="fa fa-google"></i>
+                        </a>
+                    </li>
+                    <li>
+                    	<a class="twitter" href="https://twitter.com/StephMalaf" target="_blank" rel="external" data-toggle="hidden">
+                        	<img src="img/twitter-5-48-white.png" onmouseover="this.src='img/twitter-5-48-cyan.png'" onmouseout="this.src='img/twitter-5-48-white.png'" onmousedown="this.src='img/twitter-5-48-limegreen.png'" class="social twitter" data-toggle="hidden" alt="Icone Twitter" />
+                    		<i class="fa fa-twitter"></i>
+                    	</a>
+                    </li>
+                </ul><!-- .social-buttons -->
+            </div>
+            <div>
+                <ul class="list-inline infos">
+                    <li><a href="mentions.html">Mentions l&eacute;gales</a></li>
+                    <li><a href="sitemap.html">Plan du site</a></li>
+                </ul><!-- .infos -->
+            </div>
+            <div class="copyright">
+                <span>St&eacute;phanie Malafosse &copy; 2018</span><br><span>Tous droits de reproduction et de repr&eacute;sentation
+                        r&eacute;serv&eacute;s</span>
+            </div><!-- .copyright -->
+            <div class="humans">
+            	<a href="humans.txt"><img src="img/humanstxt.png" alt="Icone humans.txt" /></a>
+            </div><!-- .humans -->
+        </section><!-- #footer -->
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <meta itemprop="streetAddress" content="29 rue de Panafé">
+        <meta itemprop="addressLocality" content="Figeac">
+        <meta itemprop="postalCode" content="46100"></span>
+        <meta itemprop="url" content="http://wwww.smalafosse.com/">
+        <meta itemprop="telephone" content="06.65.00.12.94">
+        <meta itemprop="email" content="s.malafosse@gmail.com">
+    </footer>
+
+    <script>
+        function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui prend en param le bouton et un id
+        var div = document.getElementById(id); // On récupère le div ciblé grâce à l'id
+        if(div.style.display=="none") { // Si le div est masqué...
+            div.style.display = "block"; // ... on l'affiche...
+            bouton.innerHTML = "Refermer l'article"; // ... et on change le contenu du bouton.
+        } else { // S'il est visible...
+            div.style.display = "none"; // ... on le masque...
+            bouton.innerHTML = "Lire l'article"; // ... et on change le contenu du bouton.
+            }
+        }
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

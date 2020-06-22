@@ -1,0 +1,505 @@
+
+/************************************************************************
+						MAIN INFO
+*************************************************************************
+
+@charset: utf-8
+@filename: style.css
+@URI: http://www.smalafosse.com
+@description: Website created by Stéphanie Malafosse-Bernard with
+			  Bootstrap's Framework, HTML5, CSS 3, Javascript and jQuery
+@author: Stéphanie Malafosse
+@date: February 2018
+@modification: December 17 2018
+
+COLORS
+======
+
+#FFF: white
+#F7F7F7: dark white
+#BCBCBC: grey white
+#777: grey
+#333: dark grey
+#D4E157: lime green
+#26C6DA: cyan
+
+************************************************************************/
+
+@font-face {
+    font-family: 'ruffle_beautyregular';
+    src: url('../fonts/ruffle/ruffle_beauty-webfont.eot');
+    src: url('../fonts/ruffle/ruffle_beauty-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ruffle/ruffle_beauty-webfont.woff2') format('woff2'),
+         url('../fonts/ruffle/ruffle_beauty-webfont.woff') format('woff'),
+         url('../fonts/ruffle/ruffle_beauty-webfont.ttf') format('truetype'),
+         url('../fonts/ruffle/ruffle_beauty-webfont.svg#ruffle_beautyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    /* Pour tout centrer verticalement */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Optimisation de l'affichage du texte */
+    -moz-osx-font-smoothing: grayscale;
+/* A tester sur tous les navigateurs sous Windows 
+-webkit-font-smoothing: antialiased;*/
+    text-rendering: optimizeLegibility;
+    /* Lissage de la police sur IE7 & IE8 */
+    filter: alpha(opacity=99);
+}
+html, p, a, ul, li, footer, p.tag, li ul li.font-size-reduite {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+body {
+    width: 100%;
+}
+html, body, .container, 
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: #F7F7F7;
+}
+.container {
+    text-align: center;
+}
+html, body, p, .container,
+.navbar-default .navbar nav li a, 
+#bs-example-navbar-collapse-1 ul li a,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-toggle .icon-bar, .btn-primary,
+.btn-primary:focus, .btn-primary:active
+#sitemap li a, code {
+    color: #333;
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
+a.italic:focus, a.italic:hover {
+    font-style: italic;
+}
+#about, h2#dev.page-header, h2#depannage.page-header, td {
+    padding-top: 0;
+}
+.content {
+    padding: 0% 10% 1% 10%;
+}
+section#services li {
+    padding: 0 auto;
+    margin: 0 auto 0 10%;
+}
+nav {
+    height: 70px;
+}
+.navbar-default {
+    border: none;
+}
+button.navbar-toggle {
+    display: block;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    margin-top: 15px; 
+}
+span.text-uppercase.menu, ul.infos li a, a.navbar-brand {
+    padding-right: 10px;
+}
+.navbar-header #hamburger {
+    /* 3 barres du menu hamburger */
+    float: right;
+    padding-top: 4%; 
+}
+.nav li a {
+    font-size: 0.875em;
+}
+p, .nav li a, .cc_banner-wrapper p {
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    word-spacing: 0.02em;
+    padding-top: 18px;
+}
+p, ul.social-buttons, .copyright {
+    padding: 1.5% 2%;
+}
+p.tag.text-right {
+    padding-top: 10px;
+}
+p.post-content {margin-top: 5%;}
+h1 a.navbar-brand,
+a.navbar-brand, article h3 {
+    margin-top: 0;
+}
+h1 a.navbar-brand span {
+    font-family: 'ruffle_beautyregular';
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: -20px;
+}
+a.navbar-brand span {
+    position: relative;
+    bottom: 10px;
+}
+a.navbar-brand span:hover, .infos a:hover, .infos a:focus {
+    color: #D4E157;
+}
+a.navbar-brand, #bs-example-navbar-collapse-1, #reseaux, table {
+    margin-top: 10px;
+}
+.navbar-default .navbar-toggle {
+    border:1px solid #D4E157;
+}
+table {
+    width: 94%;
+    margin: 0 auto;
+}
+th, td {
+    text-align: center;
+    border: 1px solid #777;
+    padding: 3px;
+}
+#bs-example-navbar-collapse-1 {
+    font-size: 1.125em;
+}
+#bs-example-navbar-collapse-1 ul li a:focus, #bs-example-navbar-collapse-1 ul li a:hover, #menu li a:hover {
+    color: #D4E157;
+    font-weight: 400;
+}
+#bs-example-navbar-collapse-1 ul li a:focus, 
+#bs-example-navbar-collapse-1 ul li a:hover, #menu li a:hover,
+#bs-example-navbar-collapse-1 ul li a:active, #menu li a:active {
+    font-weight: bold;
+}
+#bs-example-navbar-collapse-1 ul li a:active, #menu li a:active {
+    font-size: 1.125em;
+}
+header.home-header {
+    text-align: center;
+    color: #FFF;
+    min-height: 550px;
+    background-color: transparent;
+    background-attachment: scroll;
+    background-image: url("../img/mac1200.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header.home-header .text-header {
+    padding-top: 110px;
+    padding-bottom: 50px;
+}
+header.home-header .text-header .intro-first-text:first-letter,
+header .text-header .intro-third-text:first-letter {
+    font-size: 2em;
+    text-shadow: #333 6px 8px 5px;
+}
+header.home-header .text-header .intro-first-text:first-letter {
+    color: #D4E157;
+}
+a, a:hover, a:focus, a:active, header.home-header .text-header .intro-third-text:first-letter, #bs-example-navbar-collapse-1 a.active, 
+.cc_container a, a.cc_more_info, .cc_banner-wrapper p a, .color {
+    color: #26C6DA;
+}
+header.home-header .text-header .intro-first-text, .text-header .intro-second-text, .text-header .intro-esperluette, .text-header .intro-third-text {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.3em;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 2em;
+    text-shadow: #333 1px 2px 1px;
+}
+header.home-header .text-header .intro-esperluette {
+	font-size: 5em;
+	font-style: italic;
+}
+header.home-header .text-header .intro-esperluette {
+    color: #333;
+    font-size: 3em;
+}
+.button {
+    margin-top: 4em;
+}
+button.btn.btn-default {
+    padding: 0.5em;
+    margin-left: 3%;
+}
+.btn.btn-default {
+    margin: 0 0.7em;
+    padding: 1.1em;
+    border: 1px solid #F7F7F7;
+    font-weight: bold;
+}
+.btn.btn-default:hover {
+    color: #777;
+}
+.btn.btn-default:nth-child(1), .btn-primary, .cc_banner-wrapper a.cc_btn.cc_btn_accept_all, th, button.btn.btn-default {
+    background-color: #D4E157;
+}
+.btn.btn-default:nth-child(1):hover, button.btn.btn-default {
+    border-color: #D4E157;
+    text-shadow: 0 0 1px #D4E157;
+}
+.btn.btn-default:nth-child(2), .btn.btn-primary:hover,
+.btn.btn-primary:active, .btn.btn-primary:focus {
+    background-color: #26C6DA;
+}
+.btn.btn-default:nth-child(2):hover {
+    border-color: #26C6DA;
+    text-shadow: 0 0 1px #26C6DA;
+}
+/* Placer en dernier pour un rendu sur les 2 boutons */
+.btn.btn-default:hover {
+    background-color: #F7F7F7;
+}
+.btn.btn-primary, .btn.btn-primary:focus, .btn.btn-primary:active {
+    border: 0.5px solid #BCBCBC;
+}
+.btn.btn-primary:focus, .btn.btn-primary:active {
+    box-shadow: none;
+}
+main ul, footer div, section.content.row {
+    margin-bottom: 2%;
+}
+main.container-fluid p {
+    padding: 2% 3% 0% 3%;
+    margin: 0;
+}
+#design-list ul, #maintenance-list ul, #formation-list {
+    padding-top: 5px;
+}
+.home-services {
+    min-height: 340px;
+}
+.home-services ul {
+    line-height: 1em;
+}
+.home-services:nth-child(even), footer, .cc_banner-wrapper div {
+    background-color: #333;
+}
+.home-services:nth-child(even),
+.home-services:nth-child(even) p,
+footer p, footer span, footer a
+, .cc_banner-wrapper p {
+    color: #F7F7F7;
+}
+.home-services:nth-child(even) h2, article h3 {
+    text-shadow: 0px 1px 1px #BCBCBC;
+}
+li {
+    list-style-type: none;
+}
+li.chevron-right:before {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 10px;
+    content: "\e080";
+    color: #D4E157;
+}
+li.chevron-right {
+    text-indent: -20px;
+    margin-left: 40px;
+    padding-top: 2%;
+    text-align: left;
+}
+section.content, table {
+    margin-top: 3%;
+    padding-bottom: 2%;
+}
+.content img {
+    max-width: 100%;
+    margin-bottom: 10px; 
+}
+.content header {
+	background-image: none;
+}
+img.col-xs-12.col-sm-4.img-responsive {
+	text-align: center;
+}
+.content h2, footer div:last-of-type {
+    margin-bottom: 0;
+}
+.content li {
+    margin: 1em;
+}
+.content li.list-code {
+    margin: 0;
+}
+.post-content li.chevron-right {
+    padding-top: 5px;
+    margin: 0.05em 2em;
+}
+h2.page-header {
+    padding-top: 30px;
+}
+h2#illustration.page-header, h2#infographie.page-header {
+    padding-top: 0px;
+}
+#about img.img-responsive {
+    max-width: 350px;
+    max-height: 400px;
+    border-radius: 8%;
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+#about img[alt$="Stéphanie Malafosse"] {
+    width: 50%;
+    margin-top: -30px;
+}
+img.center {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+section#services ul, section#about li {
+    padding-left: 5%;
+    margin: 0 auto;
+}
+section:nth-child(even) h3 {
+    padding-right: 5%;
+}
+section, article {
+    padding: 1.5% 1%;
+}
+section h2 {
+    color: #D4E157;
+    padding-bottom: 20px;
+    text-shadow: 0px 1px 1px #333;
+}
+footer {
+    height: auto;
+    padding-top: 10px;
+    border-bottom: 3px solid #26C6DA;
+    background-image: url("../img/tile.png");
+}
+.clear, .content article, .content h2 {
+    clear: both;
+  }
+input#nom.form-control, input#objet.form-control, textarea#message.form-control {
+    margin: 1px auto -1px auto;
+}
+.social-buttons a img {
+    width: 48px;
+}
+#reseaux {
+	max-width: 100px;
+}
+#reseaux a img {
+    width: 32px;
+}
+.humans a img {
+    width: 88px;
+}
+#message-formulaire > article:nth-child(1) {
+	background-color: #D4E157;
+	height: 100px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+/*==================================================
+          Breakpoints Mobile First Method
+==================================================*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    a.navbar-brand span:hover {
+        color: #26C6DA;
+    }
+    button.navbar-toggle {
+        /* Masque le menu toggle sans le cacher */
+        position: absolute;
+        top: -999px;
+        left: -9999px;
+    }
+    #bs-example-navbar-collapse-1 ul li a:focus, 
+    #bs-example-navbar-collapse-1 ul li a:hover, #menu li a:hover,
+    #bs-example-navbar-collapse-1 ul li a:active, #menu li a:active {
+        font-weight: 300;
+        color: #26C6DA;
+    }
+    #bs-example-navbar-collapse-1 ul li a:active, #menu li a:active {
+        font-weight: 700;
+    }
+    .home-services {
+        min-height: 270px;
+    }
+    section#about img.even {
+        top: 50px;
+        right: 15px;
+    }
+    #about img.img-responsive {
+        right: 15px;
+    }
+} 
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1 a.navbar-brand span {
+        font-size: 2.5em;
+    }
+    p, .content li, li.chevron-right {
+        font-size: 1.125em;
+    }
+    #sitemap ul li ul {
+    	font-size: 0.9em;
+    }
+    p, nav li a {
+        letter-spacing: 0.75px;
+        word-spacing: 0.05em;
+    }
+    .nav li a {
+        font-size: 1em;
+    }
+    section#services ul {
+        padding-left: 20%;
+    }
+    li.list-code {
+        font-size: 1em;
+    }
+    .input-group {
+        padding-left: 30px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .input-group {
+        padding-left: 0;
+    }
+}
+
+/* Extra large devices (extra large desktops, 1300px and up) */
+@media (min-width: 1900px) {
+    header {
+        background-image: url("../img/mac2048.png");
+    }
+    main.container-fluid p {
+    	padding-left: 1%;
+    }
+}
+
+/* Images for Retina and HD ratio */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( -moz-min-device-pixel-ratio: 2),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( -webkit-min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+    header {
+        background-image: url("../img/mac2048@2x.png");
+        background-size: @width-1x @height-1x;
+    }
