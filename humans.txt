@@ -1,23 +1,22 @@
 
 /* AUTHOR */
 
-Name: Stephanie Malafosse-Bernard
-Title: Web designer and front-end developer
-Site: www.smalafosse.com
-E-mail: s.malafosse@gmail.com
-Contact: http://www.smalafosse.com/contact.html
+Name: Stephanie Malafosse
+Title: Graphic designer, web designer and front-end developer
+Site: https://pixelus.github.io
+E-mail: smalafosse@gmail.com
 Location: Figeac, France
 
 
 /* THANKS */
 
 Name: Swistblnk Design Std. for Ruffle Font
-Name: Glyphicons.com. for glyphicons
+Name: Glyphicons.com for glyphicons
 
 
 /* SITE */
 
-Last update:  2019/08/28                         
-Standards: HTML5, CSS3
-Components: Apache, Bootstrap, jQuery, Google Fonts API, Google Analytics, Schema.org, WAI-ARIA
-Software: Sublime Text, Sketch, Couleurs, ImageOptim, FileZilla
+Last update:  2020/06/22                         
+Standards: HTML5, CSS3, JavaScript
+Components: Bulma Framework, Font Awesome, Glyphicons
+Software: Visual Studio Code, ImageOptim, GitHub Pages
