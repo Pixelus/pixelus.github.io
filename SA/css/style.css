@@ -367,14 +367,14 @@ article#mentions_legales h2, article#valorisation h2 {
 	font-weight: bold;
 }
 
-#diagnostique {
+#vulgarisation {
 	background-color: #a983c6;
 	background-color: rgba(169, 131, 198, 0.7);
 	border: 1px solid #7202c7;
 	position: relative;
 }
 
-#diagnostique p {
+#vulgarisation p {
 	position: relative;
 	top: 70px;
 }
@@ -393,7 +393,7 @@ article#mentions_legales h2, article#valorisation h2 {
 	top: 60px;
 }
 
-#vulgarisation {
+#diagnostique {
 	background-color: #afadad;
 	background-color: rgba(175, 173, 173, 0.7);
 	border: 1px solid #8c8b8b;
@@ -402,7 +402,7 @@ article#mentions_legales h2, article#valorisation h2 {
 	left: 310px;
 }
 
-#vulgarisation p, #inventaire p {
+#diagnostique p, #inventaire p {
 	position: relative;
 	top: 55px;
 }
@@ -415,7 +415,7 @@ article#mentions_legales h2, article#valorisation h2 {
 	bottom: 200px;
 }
 
-#analyse {
+#inventaire {
 	background-color: #d7ba61;
 	background-color: rgba(215, 186, 97, 0.7);
 	border: 1px solid #d6a100;
@@ -424,12 +424,12 @@ article#mentions_legales h2, article#valorisation h2 {
 	right: 310px;
 }
 
-#analyse p {
+#inventaire p {
 	position: relative;
 	top: 65px;
 }
 
-#inventaire {
+#analyse {
 	background-color: #dd9775;
 	background-color: rgba(221, 151, 117, 0.7);
 	border: 1px solid #de5900;
