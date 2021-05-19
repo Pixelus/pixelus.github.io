@@ -398,8 +398,8 @@ article#mentions_legales h2, article#valorisation h2 {
 	background-color: rgba(175, 173, 173, 0.7);
 	border: 1px solid #8c8b8b;
 	position: relative;
-	bottom: 110px;
-	left: 310px;
+	bottom: 300px;
+	left: 210px;
 }
 
 #diagnostique p, #inventaire p {
