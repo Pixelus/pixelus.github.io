@@ -41,13 +41,13 @@
 			{
 				//Le mail a été expédié
 				echo 'Le message a &eacute;t&eacute; envoy&eacute;.'."\r\n"; 
-				echo 'Retour vers le <a href="http://www.sandrineangelibert.fr">site</a>.';
+				echo 'Retour vers le <a href="https://pixelus.github.io/SA/accueil.html">site</a>.';
 			} 
 			else 
 			{
 				//Le mail n'a pas été expédié
 				echo "Une erreur est survenue lors de l'envoi du formulaire.";
-				echo 'Retour vers le <a href="http://www.sandrineangelibert.fr">site</a>.';
+				echo 'Retour vers le <a href="https://pixelus.github.io/SA/accueil.html">site</a>.';
 			}
 		}
 	}
