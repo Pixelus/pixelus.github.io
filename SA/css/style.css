@@ -376,7 +376,7 @@ article#mentions_legales h2, article#valorisation h2 {
 
 #diagnostique p {
 	position: relative;
-	top: 70px;
+	top: 55px;
 }
 
 #ecologie {
@@ -390,7 +390,7 @@ article#mentions_legales h2, article#valorisation h2 {
 
 #ecologie p, #enseignement p {
 	position: relative;
-	top: 60px;
+	top: 65px;
 }
 
 #vulgarisation {
@@ -404,7 +404,7 @@ article#mentions_legales h2, article#valorisation h2 {
 
 #vulgarisation p, #inventaire p {
 	position: relative;
-	top: 55px;
+	top: 70px;
 }
 
 #enseignement {
@@ -426,7 +426,7 @@ article#mentions_legales h2, article#valorisation h2 {
 
 #analyse p {
 	position: relative;
-	top: 65px;
+	top: 55px;
 }
 
 #inventaire {
